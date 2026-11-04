@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TJ Manutenção | Porto Alegre - RS</title>
+  <meta name="description"
+    content="TJ Manutenção e Reparos: tomadas, LED, luminárias, pintura e hidráulica em Porto Alegre e região. Orçamento sem compromisso.">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo"><img src="img/logo.png" alt="Logo TJ Manutenção"><span>TJ Manutenção</span></a>
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="hero__tag" id="hero-local"></p>
+        <h1 id="hero-titulo"></h1>
+        <p class="hero__sub" id="hero-sub"></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" id="btn-whats" target="_blank" rel="noopener">Pedir orçamento</a>
+          <a class="btn btn--ghost" id="btn-insta" target="_blank" rel="noopener">Ver no Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <h2>Perfil de trabalho</h2>
+        <p class="section__lead" id="sobre"></p>
+        <ul class="checks" id="lista-diferenciais"></ul>
+        <div class="grid" id="lista-servicos"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="avaliacoes">
+      <div class="container">
+        <h2>Avaliações no Google</h2>
+        <div class="rating">
+          <strong class="rating__nota" id="nota"></strong>
+          <div>
+            <div class="stars" id="estrelas" aria-hidden="true"></div>
+            <small id="qtd-avaliacoes"></small>
+          </div>
+        </div>
+        <div class="grid" id="lista-avaliacoes"></div>
+        <div class="center">
+          <a class="btn btn--primary" id="btn-google" target="_blank" rel="noopener">Ver todas no Google</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <h2>Contato e redes sociais</h2>
+        <div class="grid" id="lista-contatos"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> TJ Manutenção. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://github.com/PauloFOJr" target="_blank" rel="noopener">Paulo Jr.</a></p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

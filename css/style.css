@@ -1,0 +1,283 @@
+:root {
+  --bg: #0a1f38;
+  --bg-alt: #0d2748;
+  --card: #12335a;
+  --text: #e8edf6;
+  --muted: #9aa8c2;
+  --accent: #f5a91f;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(10, 31, 56, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1b3a63;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav a {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 6rem 0 5rem;
+  background: radial-gradient(circle at 80% 0%, #17406b 0%, var(--bg) 60%);
+}
+
+.hero__tag {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.15;
+  margin: .75rem 0 1rem;
+  max-width: 18ch;
+}
+
+.hero__sub {
+  color: var(--muted);
+  max-width: 55ch;
+  font-size: 1.1rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform .15s, background .15s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #0a1f38;
+}
+
+.btn--primary:hover {
+  background: #d98f0f;
+}
+
+.btn--ghost {
+  border: 1px solid #2f5a8f;
+}
+
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.section--alt {
+  background: var(--bg-alt);
+}
+
+.section h2 {
+  font-size: 1.9rem;
+  margin-bottom: .75rem;
+}
+
+.section__lead {
+  color: var(--muted);
+  max-width: 65ch;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid #1f4474;
+}
+
+.card h3 {
+  margin-bottom: .4rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.card__icon {
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+}
+
+a.card {
+  transition: transform .15s, border-color .15s;
+  display: block;
+}
+
+a.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rating__nota {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.rating small {
+  color: var(--muted);
+}
+
+.review__autor {
+  margin-top: .75rem;
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid #1b3a63;
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.footer a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .nav {
+    gap: .8rem;
+  }
+
+  .nav a {
+    font-size: .85rem;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.checks {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.checks li::before {
+  content: "✔";
+  color: var(--accent);
+  margin-right: .5rem;
+  font-weight: 700;
+}
